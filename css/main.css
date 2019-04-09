@@ -1,0 +1,675 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+header {
+    width: 100%;
+}
+
+.wrapperContact {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.wrapperLogo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 242px;
+}
+
+.name {
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    line-height: 1.108;
+    text-align: left;
+}
+
+
+
+.contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+.contacts a{
+    margin: 0 5px;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(79, 80, 80);
+    line-height: 1.2;
+}
+
+.contacts a span {
+    font-size: 200%;
+    line-height: 0px;
+}
+
+
+.OtherLinks {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 105px;
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-left: 35px;
+    background-color: rgb(245, 242,220);
+    border-radius: 0 0 0 25px;
+}
+
+.internetBank,
+.wrapperlinksForClients{
+    width: 100%;
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.internetBank {
+    margin: 10px 0;
+}
+
+.linksForClients{
+    margin: 5px 0;
+}
+
+.linksForClients a{
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+
+nav ul {
+    display: flex;
+    width: 100%;
+    height: 77px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav ul li{
+    font-size: 16px;
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 0.9;
+    text-align: left;
+    margin: 0 10px;
+    cursor: pointer;
+}
+nav ul li:first-child{
+    margin: 0;
+}
+
+aside{
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Оформить заявку */
+.makingAnApplication{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.headerMakingAnApplication {
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to bottom, 
+        #76cc11, #70c811, #6ac411, #63bf10, #5dbb10);
+    border-radius: 0 30px 0 0;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 22px;
+}
+
+.wrapperApplications{
+    background: rgb(245, 242,220);
+    position: relative;
+    height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.makingAnApplication .wrapperApplications ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 22px;
+}
+
+.makingAnApplication .wrapperApplications li a {
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 1.5rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.makingAnApplication .search{
+    width: 160px;
+    margin: 22px;
+    outline: none;
+    margin-bottom: 13px;
+}
+
+.iconSearch{
+    position: absolute;
+    bottom: 13px;
+    right: 9px;
+    background-image: url(../img/IconSearch.png);
+    width: 22px;
+    height: 22px;
+}
+/* Другие вопросы */
+.otherQuestion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.otherQuestionimgItem{
+    margin: 9px 0;
+}
+
+.otherQuestionimgItem1 {
+    margin-top: 20px;
+}
+.otherQuestionimgItem4 {
+    margin-bottom: 20px;
+}
+/* Курсы валют */
+.wrapperExchangeRates{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130px;
+    background-color: rgb(245, 242,220);
+    border-radius: 0 0 0 25px;
+    padding-bottom: 15px;
+}
+.exchangeRates {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    font-weight: bold;
+    line-height: 0.429;
+    text-align: left;
+    margin: 10px 0 0 10px;
+}
+.containerExchangeRates {
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(79, 80, 80);
+    line-height: 1.333;
+    text-align: left;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-bottom: 20px;
+}
+.containerOne{
+    width: 40%;
+}
+
+.itemRates,
+.currencyAction,
+.currencyValue{
+    width: 100%;
+}
+
+.wrapperExchangeRates .containerOne{
+    padding: 20px;
+}
+
+.currencyAction {
+    margin: 5px 0;
+    text-align: start;
+    text-indent: 5px;
+}
+.currencyValue {
+    text-align: center;
+}
+
+.itemRates{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.itemRates::after{
+    content: '';
+    display: flex;
+    width: 9px;
+    height: 12px;
+    background-image: url(../img/Shape1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.itemRates:first-child::after {
+    background-image: url(../img/Shape2.png);
+}
+
+main {
+    width: calc( 100% - 220px);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+/* Баннер */
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 300px;
+    width: 96%;
+    background-image: radial-gradient(circle closest-corner at 30% 60%, #c8de8d, #afcc73, #94bb59, #79aa3f, #5d9924);
+    border-radius: 30px 0 0 0 ;
+    position: relative;
+    z-index: 2;
+}
+
+.headerOffers {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+}
+.productsFor{
+    height: 100%;
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    line-height: 0.8;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3333%;
+    transition: 0.3s;
+    outline: none;
+}
+
+.popUpMenu{
+    display: none;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 100%;
+    left: 0;
+    padding: 10px 30px;
+    background-color: #5c7f22;
+    opacity: 0.7;
+    transition: 0.5s;
+    z-index: 2;
+
+    width: 100%;
+    height: 100px;
+}
+.popUpMenu a {
+    margin: 0 10px;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(211, 238, 145);
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 2;
+    text-align: left;
+}
+
+.productsFor:hover{
+    background-color: #5c7f22;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 30px 30px 0 0;
+    transition: 0.5s;
+}
+
+.productsForLast:hover{
+    background-color: #5c7f22;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 30px 0 0 0;
+    transition: 0.5s;
+}
+
+.productsFor:focus~.popUpMenu {
+    display: flex;
+}
+
+.bannerImage {
+    background-image: url(../img/elephant.png);
+    height: 280px;
+    width: 220px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -7px;
+    left: 17%;
+    z-index: -1;
+}
+.banner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: calc( 100% - 40px );
+    padding: 70px;
+    padding-right: 100px;
+}
+.bunnerTagline {
+        font-size: 40px;
+        font-family: "Arial";
+        color: rgba(251, 242, 176, 0.369);
+        font-weight: bold;
+        line-height: 0.838;
+        text-align: left;
+}
+.bunnerName{
+    font-size: 20px;
+    font-family: "Georgia";
+    color: rgb(213, 255, 115);
+    line-height: 2.616;
+    text-align: left;
+
+}
+/* Минибар */
+.miniBanner{
+    background-image: linear-gradient(to bottom, 
+        #aed859, #99c84c, #85b83f, #70a831, #5c9924);
+    height: 173px;
+    width: 96%;
+    border-radius: 0 0 30px 0;
+    flex-wrap: nowrap;
+    display: flex;
+}
+.itemMinibar{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-content: flex-start;
+
+    padding: 25px 0;
+}
+
+.imgItemMinibar{
+    margin-bottom: 10px;
+}
+
+.questionItemMiniBar {
+    text-align: center;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 100%;
+    margin: 3px 0;
+
+}
+
+.nameItemMinibar {
+    text-align: center;
+    font-family: "Georgia";
+    color: rgb(213, 255, 115);
+    font-size: 12px;
+    width: 100%;
+    margin: 3px 30px;
+    font-weight: bold;
+}
+/* Новости */
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+    width: 96%;
+    margin-top: 20px;
+    align-content: space-between;
+}
+
+.wrapperMainNews{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.nameMainNews{
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.mainNews{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.descriptionMainNews {
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    line-height: 1.5;
+    text-align: left;
+}
+.descriptionMainNews p:last-child{
+    margin-bottom: 0;
+}
+
+
+
+.wrapperOtherNews {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.wrapperDataNews {
+    width: 60px;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(138, 140, 140);
+    line-height: 1.333;
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dataNews{
+    font-style: italic;
+    height: 20px;
+}
+
+.wrapperNewsDay{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: calc( 100% - 80px);
+    align-content: space-between;
+}
+.newsDay {
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(138, 140, 140);
+    line-height: 1.333;
+    width: 100%;
+    height: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Партнеры */
+
+.partners {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 96%;
+    height: 130px;
+    background-color: rgb(245, 242, 220);
+    border-radius: 0 0 25px 0;
+    padding-bottom: 15px;
+    margin-top: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.partners img {
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    width: 1000px;
+    margin-top: 40px;
+    border-top: 1px solid #d1cdb5;        
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+}
+
+.license{
+    width: 220px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.license img {
+    margin-top: 26px;
+}
+.licenseBank {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    text-align: right;
+    font-size: 11px;
+    font-family: "Arial";
+    color: rgb(90, 91, 91);
+    line-height: 1.364;
+}
+
+.wrapperInfo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    width: 100%;
+    max-width: 750px;
+}
+.wrapperInfo ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    align-items: center;
+}
+
+.wrapperInfo ul li {
+    font-size: 14px;
+    font-family: "Georgia";
+    color: rgb(79, 80, 80);
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 0.9;
+    text-align: left;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.moreInfo{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.moreInfo .item {
+    margin: 0 30px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+    font-size: 11px;
+    font-family: "Arial";
+    color: rgb(90, 91, 91);
+    line-height: 1.364;
+}
+
+.moreInfo .adress,
+.moreInfo .number {
+    width: 30%;
+}
+.moreInfo .theRights {
+    width: 40%;
+}
+
+.moreInfo .item:last-child{
+    margin-right: 0;
+}
+.moreInfo .item:first-child {
+    margin-left: 0;
+}
